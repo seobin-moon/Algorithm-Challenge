@@ -1,0 +1,23 @@
+import sys
+
+def my_round(num):
+    if(num - int(num)) >= 0.5:
+        return int(num) + 1
+    else:
+        return int(num)
+
+n = int(sys.stdin.readline().rstrip())
+
+if n == 0:
+    print(0)
+else:
+    arr = []
+    
+    for i in range(n):
+        arr.append(int(sys.stdin.readline().rstrip()))
+        
+    arr.sort()
+    border = my_round(n * 0.15)
+    
+    print(my_round(sum(arr[border:n-border]) / len(arr[border:n-border])))
+  
