@@ -23,3 +23,5 @@ public class ch03_01 {
 	}
 
 }
+
+// 화폐의 종류의 개수 coins.lenght만큼 반복을 수행하므로 시간복잡도는 O(k) (k는 상수)
