@@ -6,7 +6,7 @@ import java.io.*;
 public class ch05_03 {
 
     static int n;  
-    static int m;  /
+    static int m;  
     static int graph[][];  
 
 
