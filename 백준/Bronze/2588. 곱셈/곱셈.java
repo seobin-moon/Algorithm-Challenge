@@ -10,9 +10,9 @@ public class Main {
 		b = Integer.parseInt(br.readLine());
 		
 		int operate1 = a * (b%10);
-		int operate2 = a * (((b%100) - (b%10)) / 10); // 385 -> (85 - 5) / 10 
+		int operate2 = a * ((b%100) / 10); // 385 -> (85 - 5) / 10 
 		int operate3 = a * (b/100);
-		int operate4 = operate1 + (operate2 * 10) + (operate3 * 100);
+		int operate4 = operate1 + (operate2 * 10) + (operate3 * 100); // 혹은 a*b해도 됨 
 		
 		System.out.println(operate1);
 		System.out.println(operate2);
